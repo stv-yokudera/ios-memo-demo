@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  ios-memo-demo
+
+  Created by OkuderaYuki on 2017/12/16.
+  Copyright © 2017年 OkuderaYuki. All rights reserved.
+*/
+
+// MARK: - MemoListViewController
+"MEMO" = "メモ";
+"NO_MEMOS" = "メモなし";
+"MEMOS_COUNT" = "%d件のメモ";
+"ADD_MEMO" = "メモ追加";
+"DELETE_ALL" = "すべて削除";
+"CANCEL" = "キャンセル";

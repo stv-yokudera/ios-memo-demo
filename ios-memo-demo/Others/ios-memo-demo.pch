@@ -1,0 +1,28 @@
+//
+//  ios-memo-demo.pch
+//  ios-memo-demo
+//
+//  Created by OkuderaYuki on 2017/12/16.
+//  Copyright © 2017年 OkuderaYuki. All rights reserved.
+//
+
+#ifndef ios_memo_demo_pch
+#define ios_memo_demo_pch
+
+#pragma mark - Categories
+
+#import "NSDate+Style.h"
+#import "NSObject+NullToNil.h"
+#import "NSString+Localized.h"
+#import "UIViewController+Storyboard.h"
+
+#pragma mark - Debug Log
+
+// デバッグビルドの場合のみコンソールに出力するログ
+#if DEBUG
+#define DLOG(fmt, ...) NSLog((@"%s [Line: %d] "fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
+#else
+#define DLOG(fmt, ...)
+#endif
+
+#endif /* ios_memo_demo_pch */

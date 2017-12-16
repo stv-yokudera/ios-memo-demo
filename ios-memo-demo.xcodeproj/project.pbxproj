@@ -7,13 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2CA4CDED3277F483EEBF2A9E /* Pods_ios_memo_demoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DCA3B2436140CFF2BBC9650 /* Pods_ios_memo_demoTests.framework */; };
+		6832B676098989B91EBB5EF8 /* Pods_ios_memo_demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 851B27AC47E82995896EDCD7 /* Pods_ios_memo_demo.framework */; };
 		B63707691FE4A83900A722A2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B63707681FE4A83900A722A2 /* AppDelegate.m */; };
-		B637076C1FE4A83900A722A2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B637076B1FE4A83900A722A2 /* ViewController.m */; };
-		B637076F1FE4A83900A722A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B637076D1FE4A83900A722A2 /* Main.storyboard */; };
 		B63707711FE4A83900A722A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B63707701FE4A83900A722A2 /* Assets.xcassets */; };
 		B63707741FE4A83900A722A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B63707721FE4A83900A722A2 /* LaunchScreen.storyboard */; };
 		B63707771FE4A83900A722A2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B63707761FE4A83900A722A2 /* main.m */; };
 		B63707811FE4A83900A722A2 /* ios_memo_demoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B63707801FE4A83900A722A2 /* ios_memo_demoTests.m */; };
+		B63707921FE4A91200A722A2 /* NSDate+Style.m in Sources */ = {isa = PBXBuildFile; fileRef = B63707911FE4A91200A722A2 /* NSDate+Style.m */; };
+		B63707951FE4AA5E00A722A2 /* UIViewController+Storyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = B63707941FE4AA5E00A722A2 /* UIViewController+Storyboard.m */; };
+		B63707981FE4AC6200A722A2 /* MemoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B63707971FE4AC6200A722A2 /* MemoManager.m */; };
+		B637079C1FE4ACDE00A722A2 /* SQLiteHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B637079B1FE4ACDE00A722A2 /* SQLiteHelper.m */; };
+		B63707A11FE4AE5700A722A2 /* Paths.m in Sources */ = {isa = PBXBuildFile; fileRef = B63707A01FE4AE5700A722A2 /* Paths.m */; };
+		B63707A41FE4AF8500A722A2 /* BuildChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = B63707A31FE4AF8500A722A2 /* BuildChecker.m */; };
+		B63707A91FE4B26200A722A2 /* Memo.m in Sources */ = {isa = PBXBuildFile; fileRef = B63707A81FE4B26200A722A2 /* Memo.m */; };
+		B63707AC1FE4B30000A722A2 /* NSObject+NullToNil.m in Sources */ = {isa = PBXBuildFile; fileRef = B63707AB1FE4B30000A722A2 /* NSObject+NullToNil.m */; };
+		B63707AF1FE4B40400A722A2 /* MemoDao.m in Sources */ = {isa = PBXBuildFile; fileRef = B63707AE1FE4B40400A722A2 /* MemoDao.m */; };
+		B63707B31FE4B73300A722A2 /* MemoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B63707B21FE4B73300A722A2 /* MemoListViewController.m */; };
+		B63707B51FE4B73900A722A2 /* MemoListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B63707B41FE4B73900A722A2 /* MemoListViewController.storyboard */; };
+		B63707B91FE4B8D800A722A2 /* MemoListCellItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B63707B81FE4B8D800A722A2 /* MemoListCellItem.m */; };
+		B63707BC1FE4B8E500A722A2 /* MemoListToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = B63707BB1FE4B8E500A722A2 /* MemoListToolbar.m */; };
+		B63707C21FE4B9D500A722A2 /* MemoListProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = B63707C11FE4B9D500A722A2 /* MemoListProvider.m */; };
+		B63707CB1FE4BAD600A722A2 /* MemoListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B63707C91FE4BAD600A722A2 /* MemoListCell.m */; };
+		B63707CC1FE4BAD600A722A2 /* MemoListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B63707CA1FE4BAD600A722A2 /* MemoListCell.xib */; };
+		B63707CE1FE4BBB800A722A2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B63707CD1FE4BBB800A722A2 /* Localizable.strings */; };
+		B63707D11FE4BC3000A722A2 /* NSString+Localized.m in Sources */ = {isa = PBXBuildFile; fileRef = B63707D01FE4BC3000A722A2 /* NSString+Localized.m */; };
+		B63707D61FE4BD2D00A722A2 /* MemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B63707D51FE4BD2D00A722A2 /* MemoViewController.m */; };
+		B63707D81FE4BD3500A722A2 /* MemoViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B63707D71FE4BD3500A722A2 /* MemoViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,12 +47,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0DCA3B2436140CFF2BBC9650 /* Pods_ios_memo_demoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_memo_demoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		26AF640277D406BC18FD80E3 /* Pods-ios-memo-demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-memo-demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ios-memo-demo/Pods-ios-memo-demo.release.xcconfig"; sourceTree = "<group>"; };
+		3F74975F9F5F6A1F73D9643E /* Pods-ios-memo-demoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-memo-demoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ios-memo-demoTests/Pods-ios-memo-demoTests.release.xcconfig"; sourceTree = "<group>"; };
+		851B27AC47E82995896EDCD7 /* Pods_ios_memo_demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_memo_demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		926376906DF3E1AA437332BC /* Pods-ios-memo-demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-memo-demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ios-memo-demo/Pods-ios-memo-demo.debug.xcconfig"; sourceTree = "<group>"; };
 		B63707641FE4A83800A722A2 /* ios-memo-demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-memo-demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B63707671FE4A83800A722A2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B63707681FE4A83900A722A2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B637076A1FE4A83900A722A2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		B637076B1FE4A83900A722A2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		B637076E1FE4A83900A722A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B63707701FE4A83900A722A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B63707731FE4A83900A722A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B63707751FE4A83900A722A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -40,6 +62,45 @@
 		B637077C1FE4A83900A722A2 /* ios-memo-demoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-memo-demoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B63707801FE4A83900A722A2 /* ios_memo_demoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ios_memo_demoTests.m; sourceTree = "<group>"; };
 		B63707821FE4A83900A722A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B63707901FE4A91200A722A2 /* NSDate+Style.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+Style.h"; sourceTree = "<group>"; };
+		B63707911FE4A91200A722A2 /* NSDate+Style.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Style.m"; sourceTree = "<group>"; };
+		B63707931FE4AA5E00A722A2 /* UIViewController+Storyboard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Storyboard.h"; sourceTree = "<group>"; };
+		B63707941FE4AA5E00A722A2 /* UIViewController+Storyboard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Storyboard.m"; sourceTree = "<group>"; };
+		B63707961FE4AC6200A722A2 /* MemoManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemoManager.h; sourceTree = "<group>"; };
+		B63707971FE4AC6200A722A2 /* MemoManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemoManager.m; sourceTree = "<group>"; };
+		B637079A1FE4ACDE00A722A2 /* SQLiteHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SQLiteHelper.h; sourceTree = "<group>"; };
+		B637079B1FE4ACDE00A722A2 /* SQLiteHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SQLiteHelper.m; sourceTree = "<group>"; };
+		B637079D1FE4AD5E00A722A2 /* ios-memo-demo.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ios-memo-demo.pch"; sourceTree = "<group>"; };
+		B637079F1FE4AE5700A722A2 /* Paths.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Paths.h; sourceTree = "<group>"; };
+		B63707A01FE4AE5700A722A2 /* Paths.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Paths.m; sourceTree = "<group>"; };
+		B63707A21FE4AF8500A722A2 /* BuildChecker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BuildChecker.h; sourceTree = "<group>"; };
+		B63707A31FE4AF8500A722A2 /* BuildChecker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BuildChecker.m; sourceTree = "<group>"; };
+		B63707A71FE4B26200A722A2 /* Memo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Memo.h; sourceTree = "<group>"; };
+		B63707A81FE4B26200A722A2 /* Memo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Memo.m; sourceTree = "<group>"; };
+		B63707AA1FE4B30000A722A2 /* NSObject+NullToNil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+NullToNil.h"; sourceTree = "<group>"; };
+		B63707AB1FE4B30000A722A2 /* NSObject+NullToNil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+NullToNil.m"; sourceTree = "<group>"; };
+		B63707AD1FE4B40400A722A2 /* MemoDao.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemoDao.h; sourceTree = "<group>"; };
+		B63707AE1FE4B40400A722A2 /* MemoDao.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemoDao.m; sourceTree = "<group>"; };
+		B63707B11FE4B73300A722A2 /* MemoListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemoListViewController.h; sourceTree = "<group>"; };
+		B63707B21FE4B73300A722A2 /* MemoListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemoListViewController.m; sourceTree = "<group>"; };
+		B63707B41FE4B73900A722A2 /* MemoListViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MemoListViewController.storyboard; sourceTree = "<group>"; };
+		B63707B71FE4B8D800A722A2 /* MemoListCellItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemoListCellItem.h; sourceTree = "<group>"; };
+		B63707B81FE4B8D800A722A2 /* MemoListCellItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemoListCellItem.m; sourceTree = "<group>"; };
+		B63707BA1FE4B8E500A722A2 /* MemoListToolbar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemoListToolbar.h; sourceTree = "<group>"; };
+		B63707BB1FE4B8E500A722A2 /* MemoListToolbar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemoListToolbar.m; sourceTree = "<group>"; };
+		B63707C01FE4B9D500A722A2 /* MemoListProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemoListProvider.h; sourceTree = "<group>"; };
+		B63707C11FE4B9D500A722A2 /* MemoListProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemoListProvider.m; sourceTree = "<group>"; };
+		B63707C81FE4BAD600A722A2 /* MemoListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemoListCell.h; sourceTree = "<group>"; };
+		B63707C91FE4BAD600A722A2 /* MemoListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemoListCell.m; sourceTree = "<group>"; };
+		B63707CA1FE4BAD600A722A2 /* MemoListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MemoListCell.xib; sourceTree = "<group>"; };
+		B63707CD1FE4BBB800A722A2 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		B63707CF1FE4BC3000A722A2 /* NSString+Localized.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Localized.h"; sourceTree = "<group>"; };
+		B63707D01FE4BC3000A722A2 /* NSString+Localized.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Localized.m"; sourceTree = "<group>"; };
+		B63707D41FE4BD2D00A722A2 /* MemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemoViewController.h; sourceTree = "<group>"; };
+		B63707D51FE4BD2D00A722A2 /* MemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemoViewController.m; sourceTree = "<group>"; };
+		B63707D71FE4BD3500A722A2 /* MemoViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MemoViewController.storyboard; sourceTree = "<group>"; };
+		B63707D91FE4C14500A722A2 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		B6D5A6A56662568E976D2150 /* Pods-ios-memo-demoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-memo-demoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ios-memo-demoTests/Pods-ios-memo-demoTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6832B676098989B91EBB5EF8 /* Pods_ios_memo_demo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,18 +116,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CA4CDED3277F483EEBF2A9E /* Pods_ios_memo_demoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6F99861A588F52DB850FD50F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				926376906DF3E1AA437332BC /* Pods-ios-memo-demo.debug.xcconfig */,
+				26AF640277D406BC18FD80E3 /* Pods-ios-memo-demo.release.xcconfig */,
+				B6D5A6A56662568E976D2150 /* Pods-ios-memo-demoTests.debug.xcconfig */,
+				3F74975F9F5F6A1F73D9643E /* Pods-ios-memo-demoTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B637075B1FE4A83800A722A2 = {
 			isa = PBXGroup;
 			children = (
 				B63707661FE4A83800A722A2 /* ios-memo-demo */,
 				B637077F1FE4A83900A722A2 /* ios-memo-demoTests */,
 				B63707651FE4A83800A722A2 /* Products */,
+				6F99861A588F52DB850FD50F /* Pods */,
+				F4787EA3FFE5AD7199B9E336 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,15 +157,12 @@
 		B63707661FE4A83800A722A2 /* ios-memo-demo */ = {
 			isa = PBXGroup;
 			children = (
-				B63707671FE4A83800A722A2 /* AppDelegate.h */,
-				B63707681FE4A83900A722A2 /* AppDelegate.m */,
-				B637076A1FE4A83900A722A2 /* ViewController.h */,
-				B637076B1FE4A83900A722A2 /* ViewController.m */,
-				B637076D1FE4A83900A722A2 /* Main.storyboard */,
-				B63707701FE4A83900A722A2 /* Assets.xcassets */,
-				B63707721FE4A83900A722A2 /* LaunchScreen.storyboard */,
-				B63707751FE4A83900A722A2 /* Info.plist */,
-				B63707761FE4A83900A722A2 /* main.m */,
+				B637079E1FE4ADF300A722A2 /* Helpers */,
+				B637078F1FE4A85900A722A2 /* Categories */,
+				B637078E1FE4A85400A722A2 /* Others */,
+				B637078D1FE4A84800A722A2 /* Controllers */,
+				B637078C1FE4A84400A722A2 /* Views */,
+				B637078B1FE4A83D00A722A2 /* Models */,
 			);
 			path = "ios-memo-demo";
 			sourceTree = "<group>";
@@ -103,6 +176,180 @@
 			path = "ios-memo-demoTests";
 			sourceTree = "<group>";
 		};
+		B637078B1FE4A83D00A722A2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B63707B61FE4B8BF00A722A2 /* MemoList */,
+				B63707991FE4ACCA00A722A2 /* SQLite */,
+				B63707961FE4AC6200A722A2 /* MemoManager.h */,
+				B63707971FE4AC6200A722A2 /* MemoManager.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B637078C1FE4A84400A722A2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B63707BD1FE4B97500A722A2 /* MemoList */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B637078D1FE4A84800A722A2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B63707BE1FE4B99500A722A2 /* Memo */,
+				B63707B01FE4B71E00A722A2 /* MemoList */,
+				B63707BF1FE4B99B00A722A2 /* Startup */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B637078E1FE4A85400A722A2 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				B63707671FE4A83800A722A2 /* AppDelegate.h */,
+				B63707681FE4A83900A722A2 /* AppDelegate.m */,
+				B63707701FE4A83900A722A2 /* Assets.xcassets */,
+				B63707751FE4A83900A722A2 /* Info.plist */,
+				B63707761FE4A83900A722A2 /* main.m */,
+				B637079D1FE4AD5E00A722A2 /* ios-memo-demo.pch */,
+				B63707CD1FE4BBB800A722A2 /* Localizable.strings */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		B637078F1FE4A85900A722A2 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				B63707D21FE4BC8100A722A2 /* Foundation */,
+				B63707D31FE4BC9E00A722A2 /* UIKit */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		B63707991FE4ACCA00A722A2 /* SQLite */ = {
+			isa = PBXGroup;
+			children = (
+				B63707A61FE4B0CA00A722A2 /* DAO */,
+				B63707A51FE4B0C400A722A2 /* DTO */,
+				B637079A1FE4ACDE00A722A2 /* SQLiteHelper.h */,
+				B637079B1FE4ACDE00A722A2 /* SQLiteHelper.m */,
+			);
+			path = SQLite;
+			sourceTree = "<group>";
+		};
+		B637079E1FE4ADF300A722A2 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B637079F1FE4AE5700A722A2 /* Paths.h */,
+				B63707A01FE4AE5700A722A2 /* Paths.m */,
+				B63707A21FE4AF8500A722A2 /* BuildChecker.h */,
+				B63707A31FE4AF8500A722A2 /* BuildChecker.m */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		B63707A51FE4B0C400A722A2 /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				B63707A71FE4B26200A722A2 /* Memo.h */,
+				B63707A81FE4B26200A722A2 /* Memo.m */,
+			);
+			path = DTO;
+			sourceTree = "<group>";
+		};
+		B63707A61FE4B0CA00A722A2 /* DAO */ = {
+			isa = PBXGroup;
+			children = (
+				B63707AD1FE4B40400A722A2 /* MemoDao.h */,
+				B63707AE1FE4B40400A722A2 /* MemoDao.m */,
+			);
+			path = DAO;
+			sourceTree = "<group>";
+		};
+		B63707B01FE4B71E00A722A2 /* MemoList */ = {
+			isa = PBXGroup;
+			children = (
+				B63707B11FE4B73300A722A2 /* MemoListViewController.h */,
+				B63707B21FE4B73300A722A2 /* MemoListViewController.m */,
+				B63707B41FE4B73900A722A2 /* MemoListViewController.storyboard */,
+			);
+			path = MemoList;
+			sourceTree = "<group>";
+		};
+		B63707B61FE4B8BF00A722A2 /* MemoList */ = {
+			isa = PBXGroup;
+			children = (
+				B63707B71FE4B8D800A722A2 /* MemoListCellItem.h */,
+				B63707B81FE4B8D800A722A2 /* MemoListCellItem.m */,
+				B63707BA1FE4B8E500A722A2 /* MemoListToolbar.h */,
+				B63707BB1FE4B8E500A722A2 /* MemoListToolbar.m */,
+			);
+			path = MemoList;
+			sourceTree = "<group>";
+		};
+		B63707BD1FE4B97500A722A2 /* MemoList */ = {
+			isa = PBXGroup;
+			children = (
+				B63707C01FE4B9D500A722A2 /* MemoListProvider.h */,
+				B63707C11FE4B9D500A722A2 /* MemoListProvider.m */,
+				B63707C81FE4BAD600A722A2 /* MemoListCell.h */,
+				B63707C91FE4BAD600A722A2 /* MemoListCell.m */,
+				B63707CA1FE4BAD600A722A2 /* MemoListCell.xib */,
+			);
+			path = MemoList;
+			sourceTree = "<group>";
+		};
+		B63707BE1FE4B99500A722A2 /* Memo */ = {
+			isa = PBXGroup;
+			children = (
+				B63707D41FE4BD2D00A722A2 /* MemoViewController.h */,
+				B63707D51FE4BD2D00A722A2 /* MemoViewController.m */,
+				B63707D71FE4BD3500A722A2 /* MemoViewController.storyboard */,
+			);
+			path = Memo;
+			sourceTree = "<group>";
+		};
+		B63707BF1FE4B99B00A722A2 /* Startup */ = {
+			isa = PBXGroup;
+			children = (
+				B63707721FE4A83900A722A2 /* LaunchScreen.storyboard */,
+			);
+			path = Startup;
+			sourceTree = "<group>";
+		};
+		B63707D21FE4BC8100A722A2 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				B63707901FE4A91200A722A2 /* NSDate+Style.h */,
+				B63707911FE4A91200A722A2 /* NSDate+Style.m */,
+				B63707AA1FE4B30000A722A2 /* NSObject+NullToNil.h */,
+				B63707AB1FE4B30000A722A2 /* NSObject+NullToNil.m */,
+				B63707CF1FE4BC3000A722A2 /* NSString+Localized.h */,
+				B63707D01FE4BC3000A722A2 /* NSString+Localized.m */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		B63707D31FE4BC9E00A722A2 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				B63707931FE4AA5E00A722A2 /* UIViewController+Storyboard.h */,
+				B63707941FE4AA5E00A722A2 /* UIViewController+Storyboard.m */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		F4787EA3FFE5AD7199B9E336 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				851B27AC47E82995896EDCD7 /* Pods_ios_memo_demo.framework */,
+				0DCA3B2436140CFF2BBC9650 /* Pods_ios_memo_demoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -110,9 +357,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B63707851FE4A83900A722A2 /* Build configuration list for PBXNativeTarget "ios-memo-demo" */;
 			buildPhases = (
+				D12AE562133263DA1BBE1EA6 /* [CP] Check Pods Manifest.lock */,
 				B63707601FE4A83800A722A2 /* Sources */,
 				B63707611FE4A83800A722A2 /* Frameworks */,
 				B63707621FE4A83800A722A2 /* Resources */,
+				746C3EDDA905089198623C53 /* [CP] Embed Pods Frameworks */,
+				7FDBDACFDCEAC3DBA2CCD7A7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -127,9 +377,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B63707881FE4A83900A722A2 /* Build configuration list for PBXNativeTarget "ios-memo-demoTests" */;
 			buildPhases = (
+				3CF13DEF37627C49F89D14AE /* [CP] Check Pods Manifest.lock */,
 				B63707781FE4A83900A722A2 /* Sources */,
 				B63707791FE4A83900A722A2 /* Frameworks */,
 				B637077A1FE4A83900A722A2 /* Resources */,
+				2FD55FFDDCE6AE6929784E7B /* [CP] Embed Pods Frameworks */,
+				FB4C3A71E09DC2C0E138897A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -185,9 +438,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B63707CE1FE4BBB800A722A2 /* Localizable.strings in Resources */,
+				B63707D81FE4BD3500A722A2 /* MemoViewController.storyboard in Resources */,
 				B63707741FE4A83900A722A2 /* LaunchScreen.storyboard in Resources */,
 				B63707711FE4A83900A722A2 /* Assets.xcassets in Resources */,
-				B637076F1FE4A83900A722A2 /* Main.storyboard in Resources */,
+				B63707B51FE4B73900A722A2 /* MemoListViewController.storyboard in Resources */,
+				B63707CC1FE4BAD600A722A2 /* MemoListCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,14 +456,131 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2FD55FFDDCE6AE6929784E7B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ios-memo-demoTests/Pods-ios-memo-demoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3CF13DEF37627C49F89D14AE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ios-memo-demoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		746C3EDDA905089198623C53 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ios-memo-demo/Pods-ios-memo-demo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ios-memo-demo/Pods-ios-memo-demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7FDBDACFDCEAC3DBA2CCD7A7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ios-memo-demo/Pods-ios-memo-demo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D12AE562133263DA1BBE1EA6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ios-memo-demo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB4C3A71E09DC2C0E138897A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ios-memo-demoTests/Pods-ios-memo-demoTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B63707601FE4A83800A722A2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B637076C1FE4A83900A722A2 /* ViewController.m in Sources */,
+				B63707B91FE4B8D800A722A2 /* MemoListCellItem.m in Sources */,
+				B63707B31FE4B73300A722A2 /* MemoListViewController.m in Sources */,
+				B63707921FE4A91200A722A2 /* NSDate+Style.m in Sources */,
+				B63707CB1FE4BAD600A722A2 /* MemoListCell.m in Sources */,
+				B63707C21FE4B9D500A722A2 /* MemoListProvider.m in Sources */,
+				B63707981FE4AC6200A722A2 /* MemoManager.m in Sources */,
+				B63707D11FE4BC3000A722A2 /* NSString+Localized.m in Sources */,
+				B63707A11FE4AE5700A722A2 /* Paths.m in Sources */,
+				B63707D61FE4BD2D00A722A2 /* MemoViewController.m in Sources */,
+				B637079C1FE4ACDE00A722A2 /* SQLiteHelper.m in Sources */,
+				B63707AC1FE4B30000A722A2 /* NSObject+NullToNil.m in Sources */,
+				B63707951FE4AA5E00A722A2 /* UIViewController+Storyboard.m in Sources */,
+				B63707A91FE4B26200A722A2 /* Memo.m in Sources */,
+				B63707A41FE4AF8500A722A2 /* BuildChecker.m in Sources */,
 				B63707771FE4A83900A722A2 /* main.m in Sources */,
+				B63707AF1FE4B40400A722A2 /* MemoDao.m in Sources */,
 				B63707691FE4A83900A722A2 /* AppDelegate.m in Sources */,
+				B63707BC1FE4B8E500A722A2 /* MemoListToolbar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,18 +603,11 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B637076D1FE4A83900A722A2 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B637076E1FE4A83900A722A2 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B63707721FE4A83900A722A2 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				B63707731FE4A83900A722A2 /* Base */,
+				B63707D91FE4C14500A722A2 /* ja */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -253,6 +619,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -308,6 +675,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -355,11 +723,13 @@
 		};
 		B63707861FE4A83900A722A2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 926376906DF3E1AA437332BC /* Pods-ios-memo-demo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PCCZJUYRT6;
-				INFOPLIST_FILE = "ios-memo-demo/Info.plist";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ios-memo-demo/Others/ios-memo-demo.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/ios-memo-demo/Others/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.st-ventures.ios-memo-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -369,11 +739,13 @@
 		};
 		B63707871FE4A83900A722A2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26AF640277D406BC18FD80E3 /* Pods-ios-memo-demo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PCCZJUYRT6;
-				INFOPLIST_FILE = "ios-memo-demo/Info.plist";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ios-memo-demo/Others/ios-memo-demo.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/ios-memo-demo/Others/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.st-ventures.ios-memo-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -383,6 +755,7 @@
 		};
 		B63707891FE4A83900A722A2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6D5A6A56662568E976D2150 /* Pods-ios-memo-demoTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -398,6 +771,7 @@
 		};
 		B637078A1FE4A83900A722A2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F74975F9F5F6A1F73D9643E /* Pods-ios-memo-demoTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
