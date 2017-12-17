@@ -9,6 +9,7 @@
 #import "NSDate+Style.h"
 
 @implementation NSDate (Style)
+
 - (NSString *)dateStyle {
 
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
@@ -26,14 +27,13 @@
     NSCalendarUnitHour |
     NSCalendarUnitMinute;
 
-    NSDateComponents *components = [calendar components:unitFlags
-                                               fromDate:self];
+    NSDateComponents *components = [calendar components:unitFlags fromDate:self];
 
     NSInteger year = components.year;
     NSInteger month = components.month;
     NSInteger day = components.day;
     NSInteger hour = components.hour;
-    NSInteger minite = components.minute;
+    NSInteger minute = components.minute;
 
     BOOL yearAreEqual = [calendar isDate:now equalToDate:self toUnitGranularity:NSCalendarUnitYear];
 
@@ -48,7 +48,7 @@
     if (!dateAreEqual) {
         return [NSString stringWithFormat:@"%02d/%02d", (int)month, (int)day];
     }
-    return [NSString stringWithFormat:@"%02d:%02d", (int)hour, (int)minite];
+    return [NSString stringWithFormat:@"%02d:%02d", (int)hour, (int)minute];
 }
 
 @end
