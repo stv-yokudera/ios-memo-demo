@@ -11,7 +11,5 @@
 
 @interface MemoManager : NSObject
 + (void)save:(Memo *)memo;
-+ (NSArray <Memo *> *)selectAll;
 + (NSMutableArray <MemoListCellItem *> *)allItems;
-+ (BOOL)deleteAll;
 @end

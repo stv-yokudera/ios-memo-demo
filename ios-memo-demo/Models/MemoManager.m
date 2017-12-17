@@ -28,23 +28,15 @@
     [self isEmpty:memo] ? [MemoDao deleteId:memo.memoId] : [MemoDao update:memo];
 }
 
-+ (NSArray <Memo *> *)selectAll {
-    return [MemoDao selectAll];
-}
-
 + (NSMutableArray <MemoListCellItem *> *)allItems {
 
-    NSArray <Memo *> *allMemo = [MemoManager selectAll];
+    NSArray <Memo *> *allMemo = [MemoDao selectAll];
     NSMutableArray <MemoListCellItem *> *items = [@[] mutableCopy];
     for (Memo *memo in allMemo) {
         MemoListCellItem *item = [[MemoListCellItem alloc] initWithMemo:memo];
         [items addObject:item];
     }
     return items;
-}
-
-+ (BOOL)deleteAll {
-    return [MemoDao deleteAll];
 }
 
 #pragma mark - Private

@@ -9,5 +9,5 @@
 @import UIKit;
 
 @interface UIViewController (Storyboard)
-+ (UIViewController *)initialViewControllerWithStoryboardName:(NSString *)storyboardName;
++ (__kindof UIViewController *)initialViewControllerWithStoryboardName:(NSString *)storyboardName;
 @end

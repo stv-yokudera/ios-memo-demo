@@ -10,8 +10,9 @@
 
 @implementation UIViewController (Storyboard)
 
-+ (UIViewController *)initialViewControllerWithStoryboardName:(NSString *)storyboardName {
-    return [[UIStoryboard storyboardWithName:storyboardName bundle:nil] instantiateInitialViewController];
++ (__kindof UIViewController *)initialViewControllerWithStoryboardName:(NSString *)storyboardName {
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:storyboardName bundle:nil];
+    return [storyboard instantiateInitialViewController];
 }
 
 @end

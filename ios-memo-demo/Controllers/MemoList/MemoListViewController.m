@@ -74,7 +74,7 @@
  */
 - (void)reloadToolbar {
 
-    NSInteger memoCount = [MemoManager selectAll].count;
+    NSInteger memoCount = [MemoDao selectAll].count;
     self.rightToolbarButton.title = [MemoListToolbar rightToolbarButtonTitle:memoCount];
     self.leftToolbarButton.title = [MemoListToolbar leftToolbarButtonTitle:self.isEditing];
 }
@@ -100,7 +100,7 @@
     UIAlertAction *deleteAction = [UIAlertAction actionWithTitle:[@"DELETE_ALL" localized]
                                                            style:UIAlertActionStyleDestructive
                                                          handler:^(UIAlertAction * _Nonnull action) {
-                                                             [MemoManager deleteAll];
+                                                             [MemoDao deleteAll];
                                                              [weakSelf reloadTableView];
                                                              [weakSelf reloadToolbar];
 

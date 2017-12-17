@@ -17,10 +17,8 @@
 
 + (NSString *)dbPath {
 
-    if ([BuildChecker isTesting]) {
-        return [self.documentsDirectory stringByAppendingPathComponent:@"unittest.db"];
-    }
-    return [self.documentsDirectory stringByAppendingPathComponent:@"product.db"];
+    NSString *dbName = [BuildChecker isTesting] ? @"unittest.db" : @"product.db";
+    return [self.documentsDirectory stringByAppendingPathComponent:dbName];
 }
 
 @end
