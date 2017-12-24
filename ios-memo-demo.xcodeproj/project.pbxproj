@@ -36,6 +36,7 @@
 		B6AAC5D41FEFA8F800B29989 /* MemoListCellItemTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B6AAC5D31FEFA8F800B29989 /* MemoListCellItemTests.m */; };
 		B6AAC5D61FEFAAB200B29989 /* MemoListToolbarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B6AAC5D51FEFAAB200B29989 /* MemoListToolbarTests.m */; };
 		B6AAC5DA1FEFADAF00B29989 /* MemoDaoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B6AAC5D91FEFADAF00B29989 /* MemoDaoTests.m */; };
+		B6AAC5DE1FF01FA400B29989 /* MemoListCellTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B6AAC5DD1FF01FA400B29989 /* MemoListCellTests.m */; };
 		B6FC78551FEEA91000B72718 /* NSDate+ToString.m in Sources */ = {isa = PBXBuildFile; fileRef = B6FC78541FEEA91000B72718 /* NSDate+ToString.m */; };
 		B6FC78581FEEA9EE00B72718 /* NSString+ToDate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6FC78571FEEA9EE00B72718 /* NSString+ToDate.m */; };
 /* End PBXBuildFile section */
@@ -106,6 +107,7 @@
 		B6AAC5D31FEFA8F800B29989 /* MemoListCellItemTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemoListCellItemTests.m; sourceTree = "<group>"; };
 		B6AAC5D51FEFAAB200B29989 /* MemoListToolbarTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemoListToolbarTests.m; sourceTree = "<group>"; };
 		B6AAC5D91FEFADAF00B29989 /* MemoDaoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemoDaoTests.m; sourceTree = "<group>"; };
+		B6AAC5DD1FF01FA400B29989 /* MemoListCellTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemoListCellTests.m; sourceTree = "<group>"; };
 		B6D5A6A56662568E976D2150 /* Pods-ios-memo-demoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-memo-demoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ios-memo-demoTests/Pods-ios-memo-demoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B6FC78531FEEA91000B72718 /* NSDate+ToString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+ToString.h"; sourceTree = "<group>"; };
 		B6FC78541FEEA91000B72718 /* NSDate+ToString.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+ToString.m"; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 		B637077F1FE4A83900A722A2 /* ios-memo-demoTests */ = {
 			isa = PBXGroup;
 			children = (
+				B6AAC5DB1FF01F6100B29989 /* Views */,
 				B6AAC5D21FEFA8E400B29989 /* Models */,
 				B63707821FE4A83900A722A2 /* Info.plist */,
 			);
@@ -379,6 +382,22 @@
 				B6AAC5D91FEFADAF00B29989 /* MemoDaoTests.m */,
 			);
 			path = SQLite;
+			sourceTree = "<group>";
+		};
+		B6AAC5DB1FF01F6100B29989 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B6AAC5DC1FF01F6900B29989 /* MemoList */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B6AAC5DC1FF01F6900B29989 /* MemoList */ = {
+			isa = PBXGroup;
+			children = (
+				B6AAC5DD1FF01FA400B29989 /* MemoListCellTests.m */,
+			);
+			path = MemoList;
 			sourceTree = "<group>";
 		};
 		F4787EA3FFE5AD7199B9E336 /* Frameworks */ = {
@@ -633,6 +652,7 @@
 				B6AAC5D61FEFAAB200B29989 /* MemoListToolbarTests.m in Sources */,
 				B6AAC5D41FEFA8F800B29989 /* MemoListCellItemTests.m in Sources */,
 				B6AAC5DA1FEFADAF00B29989 /* MemoDaoTests.m in Sources */,
+				B6AAC5DE1FF01FA400B29989 /* MemoListCellTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
