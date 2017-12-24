@@ -14,8 +14,6 @@
 
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
     formatter.locale = [[NSLocale alloc] initWithLocaleIdentifier:@"ja_JP"];
-    formatter.timeStyle = NSDateFormatterShortStyle;
-    formatter.dateStyle = NSDateFormatterShortStyle;
     formatter.dateFormat = @"yyyy/MM/dd HH:mm:ss";
     NSDate *now = [formatter dateFromString:[formatter stringFromDate:[NSDate date]]];
 
@@ -35,17 +33,21 @@
     NSInteger hour = components.hour;
     NSInteger minute = components.minute;
 
-    BOOL yearAreEqual = [calendar isDate:now equalToDate:self toUnitGranularity:NSCalendarUnitYear];
+    BOOL isSameYear = [calendar isDate:now
+                           equalToDate:self
+                     toUnitGranularity:NSCalendarUnitYear];
 
     // 年が異なるかどうか
-    if (!yearAreEqual) {
+    if (!isSameYear) {
         return [NSString stringWithFormat:@"%04d/%02d/%02d", (int)year, (int)month, (int)day];
     }
 
-    BOOL dateAreEqual = [calendar isDate:now equalToDate:self toUnitGranularity:NSCalendarUnitDay];
+    BOOL isSameDay = [calendar isDate:now
+                          equalToDate:self
+                    toUnitGranularity:NSCalendarUnitDay];
 
     // 日が異なるかどうか
-    if (!dateAreEqual) {
+    if (!isSameDay) {
         return [NSString stringWithFormat:@"%02d/%02d", (int)month, (int)day];
     }
     return [NSString stringWithFormat:@"%02d:%02d", (int)hour, (int)minute];

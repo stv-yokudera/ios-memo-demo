@@ -11,7 +11,7 @@
 
 @interface Memo : NSObject
 @property (nonatomic) NSInteger memoId;
-@property (nonatomic) NSDate *updateDate;
+@property (nonatomic) NSString *updateDate;
 @property (nonatomic) NSString *text;
 
 - (instancetype)initWithFMResultSet:(FMResultSet *)results;

@@ -9,7 +9,7 @@
 @import UIKit;
 
 @interface MemoViewController : UIViewController
-@property (nonatomic) NSDate *updateDate;
+@property (nonatomic) NSString *updateDate;
 
 /**
  MemoViewControllerのインスタンスを生成する
@@ -17,5 +17,5 @@
  @param updateDate 編集の場合はDBに登録されている更新日時、新規の場合はnil
  @return MemoViewControllerのインスタンス
  */
-+ (MemoViewController *)make:(NSDate *)updateDate;
++ (MemoViewController *)make:(NSString *)updateDate;
 @end

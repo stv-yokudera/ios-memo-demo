@@ -14,7 +14,7 @@
     self = [super init];
     if (self) {
         self.memoId = [results intForColumn:@"memoId"];
-        self.updateDate = [[results dateForColumn:@"updateDate"] nullToNil];
+        self.updateDate = [[results stringForColumn:@"updateDate"] nullToNil];
         self.text = [[results stringForColumn:@"text"] nullToNil];
     }
     return self;

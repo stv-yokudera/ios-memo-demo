@@ -11,6 +11,7 @@
 
 @interface MemoViewController ()
 @property (weak, nonatomic) IBOutlet UITextView *textView;
+@property (nonatomic) NSString *previousText;
 @end
 
 NSString *const storyboardName = @"MemoViewController";
@@ -19,7 +20,7 @@ NSString *const storyboardName = @"MemoViewController";
 
 #pragma mark - Factory
 
-+ (MemoViewController *)make:(NSDate *)updateDate {
++ (MemoViewController *)make:(NSString *)updateDate {
     MemoViewController *memoVC = (MemoViewController *)[MemoViewController initialViewControllerWithStoryboardName:storyboardName];
     memoVC.updateDate = updateDate;
     return memoVC;
@@ -41,19 +42,26 @@ NSString *const storyboardName = @"MemoViewController";
 
 - (IBAction)didTapDoneButton:(id)sender {
 
-    Memo *memo = [[Memo alloc] init];
-    memo.text = self.textView.text;
-    memo.updateDate = self.updateDate;
-    [MemoManager save:memo];
+    // メモが変更されていたら、保存処理をする
+    if (![self.textView.text isEqualToString:self.previousText]) {
 
+        Memo *memo = [[Memo alloc] init];
+        memo.text = self.textView.text;
+        NSString *updateDateString = self.updateDate;
+        memo.updateDate = updateDateString;
+        [MemoManager save:memo];
+    }
     [self.navigationController popViewControllerAnimated:true];
 }
 
 #pragma mark - Private
 
 - (void)setup {
+    // 更新日が渡されているのであればテキストを取得する
     if (self.updateDate) {
-        self.textView.text = [MemoDao selectByUpdateDate:self.updateDate].text;
+        NSString *updateDateString = self.updateDate;
+        self.textView.text = [MemoDao selectByUpdateDate:updateDateString].text;
+        self.previousText = self.textView.text;
     }
     [self.textView becomeFirstResponder];
 }

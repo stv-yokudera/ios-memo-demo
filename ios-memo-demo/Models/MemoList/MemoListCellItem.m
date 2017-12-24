@@ -15,7 +15,7 @@
     self = [super init];
     if (self) {
         self.memoId = memo.memoId;
-        self.updateDate = memo.updateDate;
+        self.updateDate = [memo.updateDate toDateWithFormat:@"yyyy/MM/dd HH:mm:ss"];
 
         NSMutableArray <NSString *> *lines = [[memo.text componentsSeparatedByString:@"\n"] mutableCopy];
         [lines removeObject:@""];

@@ -62,7 +62,7 @@ static SQLiteHelper *sharedInstance = nil;
  */
 - (BOOL)createMemoTable {
 
-    NSString *sql = @"CREATE TABLE IF NOT EXISTS MEMO (memoId INTEGER PRIMARY KEY AUTOINCREMENT, updateDate DATE, text TEXT)";
+    NSString *sql = @"CREATE TABLE IF NOT EXISTS MEMO (memoId INTEGER PRIMARY KEY AUTOINCREMENT, updateDate TEXT, text TEXT)";
 
     BOOL result = NO;
 

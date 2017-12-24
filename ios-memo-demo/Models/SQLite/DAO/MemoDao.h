@@ -12,7 +12,7 @@
 + (BOOL)insert:(Memo *)memoObject;
 + (BOOL)update:(Memo *)memoObject;
 + (NSArray <Memo *> *)selectAll;
-+ (Memo *)selectByUpdateDate:(NSDate *)date;
++ (Memo *)selectByUpdateDate:(NSString *)dateString;
 + (BOOL)deleteAll;
 + (BOOL)deleteId:(NSInteger)memoId;
 

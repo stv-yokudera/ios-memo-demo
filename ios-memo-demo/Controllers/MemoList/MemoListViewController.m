@@ -130,7 +130,8 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     MemoListCellItem *item = self.provider.items[indexPath.row];
-    MemoViewController *memoVC = [MemoViewController make:item.updateDate];
+    NSString *dateString = [item.updateDate toStringWithFormat:@"yyyy/MM/dd HH:mm:ss"];
+    MemoViewController *memoVC = [MemoViewController make:dateString];
     [self.navigationController pushViewController:memoVC animated:true];
 }
 

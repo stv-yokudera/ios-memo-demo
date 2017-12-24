@@ -20,7 +20,7 @@
  */
 + (BOOL)insert:(Memo *)memoObject {
 
-    memoObject.updateDate = [NSDate date];
+    NSString *dateString = [[NSDate date] toStringWithFormat:@"yyyy/MM/dd HH:mm:ss"];
 
     NSString* sql = @"INSERT INTO MEMO(updateDate, text) VALUES(?, ?)";
 
@@ -28,7 +28,7 @@
 
     [[SQLiteHelper sharedManager] dbOpen];
     result = [[SQLiteHelper sharedManager].db executeUpdate:sql
-                                       withArgumentsInArray:@[memoObject.updateDate, memoObject.text]];
+                                       withArgumentsInArray:@[dateString, memoObject.text]];
     [[SQLiteHelper sharedManager] dbClose];
     return result;
 }
@@ -42,9 +42,11 @@
  */
 + (BOOL)update:(Memo *)memoObject {
 
+    NSString *updateDateString = [[NSDate date] toStringWithFormat:@"yyyy/MM/dd HH:mm:ss"];
+
     NSString* sql = @"UPDATE MEMO SET updateDate = :UPDATEDATE, text = :TEXT WHERE memoId = :MEMOID";
 
-    NSDictionary<NSString *, id> *params = @{@"UPDATEDATE": memoObject.updateDate,
+    NSDictionary<NSString *, id> *params = @{@"UPDATEDATE": updateDateString,
                                              @"TEXT": memoObject.text,
                                              @"MEMOID": @(memoObject.memoId)};
 
@@ -86,7 +88,7 @@
  @param date 取得するレコードの更新日
  @return MemoObject
  */
-+ (Memo *)selectByUpdateDate:(NSDate *)date {
++ (Memo *)selectByUpdateDate:(NSString *)date {
 
     NSString *sql = @"SELECT * FROM MEMO WHERE updateDate = ?";
 
