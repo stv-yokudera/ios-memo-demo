@@ -9,6 +9,6 @@
 @import Foundation;
 
 @interface MemoListToolbar : NSObject
-+ (NSString *)rightToolbarButtonTitle:(NSInteger)count;
-+ (NSString *)leftToolbarButtonTitle:(BOOL)isEditing;
++ (NSString *)rightButtonTitleWithMemoCount:(NSInteger)count;
++ (NSString *)leftButtonTitleWhenIsEditing:(BOOL)isEditing;
 @end

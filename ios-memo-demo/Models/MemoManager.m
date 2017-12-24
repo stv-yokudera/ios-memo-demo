@@ -12,10 +12,11 @@
 
 + (void)save:(Memo *)memo {
 
+    // 新規メモで且つテキストが空文字でなければINSERT
     if ([self isNew:memo]) {
 
         if (![self isEmpty:memo]) {
-            // 新規メモで、テキストが空文字でなければINSERT
+            memo.updateDate = [[NSDate date] toStringWithFormat:@"yyyy/MM/dd HH:mm:ss"];
             [MemoDao insert:memo];
         }
         return;
@@ -25,7 +26,12 @@
     memo.memoId = [MemoDao selectByUpdateDate:memo.updateDate].memoId;
 
     // テキストが空文字の場合はDELETE、空文字でなければUPDATE
-    [self isEmpty:memo] ? [MemoDao deleteId:memo.memoId] : [MemoDao update:memo];
+    if ([self isEmpty:memo]) {
+        [MemoDao deleteId:memo.memoId];
+        return;
+    }
+    memo.updateDate = [[NSDate date] toStringWithFormat:@"yyyy/MM/dd HH:mm:ss"];
+    [MemoDao update:memo];
 }
 
 + (NSMutableArray <MemoListCellItem *> *)allItems {

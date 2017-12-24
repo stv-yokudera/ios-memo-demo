@@ -75,8 +75,8 @@
 - (void)reloadToolbar {
 
     NSInteger memoCount = [MemoDao selectAll].count;
-    self.rightToolbarButton.title = [MemoListToolbar rightToolbarButtonTitle:memoCount];
-    self.leftToolbarButton.title = [MemoListToolbar leftToolbarButtonTitle:self.isEditing];
+    self.rightToolbarButton.title = [MemoListToolbar rightButtonTitleWithMemoCount:memoCount];
+    self.leftToolbarButton.title = [MemoListToolbar leftButtonTitleWhenIsEditing:self.isEditing];
 }
 
 /**

@@ -13,7 +13,6 @@
 		B63707711FE4A83900A722A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B63707701FE4A83900A722A2 /* Assets.xcassets */; };
 		B63707741FE4A83900A722A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B63707721FE4A83900A722A2 /* LaunchScreen.storyboard */; };
 		B63707771FE4A83900A722A2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B63707761FE4A83900A722A2 /* main.m */; };
-		B63707811FE4A83900A722A2 /* ios_memo_demoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B63707801FE4A83900A722A2 /* ios_memo_demoTests.m */; };
 		B63707921FE4A91200A722A2 /* NSDate+Style.m in Sources */ = {isa = PBXBuildFile; fileRef = B63707911FE4A91200A722A2 /* NSDate+Style.m */; };
 		B63707951FE4AA5E00A722A2 /* UIViewController+Storyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = B63707941FE4AA5E00A722A2 /* UIViewController+Storyboard.m */; };
 		B63707981FE4AC6200A722A2 /* MemoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B63707971FE4AC6200A722A2 /* MemoManager.m */; };
@@ -34,6 +33,9 @@
 		B63707D11FE4BC3000A722A2 /* NSString+Localized.m in Sources */ = {isa = PBXBuildFile; fileRef = B63707D01FE4BC3000A722A2 /* NSString+Localized.m */; };
 		B63707D61FE4BD2D00A722A2 /* MemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B63707D51FE4BD2D00A722A2 /* MemoViewController.m */; };
 		B63707D81FE4BD3500A722A2 /* MemoViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B63707D71FE4BD3500A722A2 /* MemoViewController.storyboard */; };
+		B6AAC5D41FEFA8F800B29989 /* MemoListCellItemTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B6AAC5D31FEFA8F800B29989 /* MemoListCellItemTests.m */; };
+		B6AAC5D61FEFAAB200B29989 /* MemoListToolbarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B6AAC5D51FEFAAB200B29989 /* MemoListToolbarTests.m */; };
+		B6AAC5DA1FEFADAF00B29989 /* MemoDaoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B6AAC5D91FEFADAF00B29989 /* MemoDaoTests.m */; };
 		B6FC78551FEEA91000B72718 /* NSDate+ToString.m in Sources */ = {isa = PBXBuildFile; fileRef = B6FC78541FEEA91000B72718 /* NSDate+ToString.m */; };
 		B6FC78581FEEA9EE00B72718 /* NSString+ToDate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6FC78571FEEA9EE00B72718 /* NSString+ToDate.m */; };
 /* End PBXBuildFile section */
@@ -62,7 +64,6 @@
 		B63707751FE4A83900A722A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B63707761FE4A83900A722A2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B637077C1FE4A83900A722A2 /* ios-memo-demoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-memo-demoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B63707801FE4A83900A722A2 /* ios_memo_demoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ios_memo_demoTests.m; sourceTree = "<group>"; };
 		B63707821FE4A83900A722A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B63707901FE4A91200A722A2 /* NSDate+Style.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+Style.h"; sourceTree = "<group>"; };
 		B63707911FE4A91200A722A2 /* NSDate+Style.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Style.m"; sourceTree = "<group>"; };
@@ -102,6 +103,9 @@
 		B63707D51FE4BD2D00A722A2 /* MemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemoViewController.m; sourceTree = "<group>"; };
 		B63707D71FE4BD3500A722A2 /* MemoViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MemoViewController.storyboard; sourceTree = "<group>"; };
 		B63707D91FE4C14500A722A2 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		B6AAC5D31FEFA8F800B29989 /* MemoListCellItemTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemoListCellItemTests.m; sourceTree = "<group>"; };
+		B6AAC5D51FEFAAB200B29989 /* MemoListToolbarTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemoListToolbarTests.m; sourceTree = "<group>"; };
+		B6AAC5D91FEFADAF00B29989 /* MemoDaoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemoDaoTests.m; sourceTree = "<group>"; };
 		B6D5A6A56662568E976D2150 /* Pods-ios-memo-demoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-memo-demoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ios-memo-demoTests/Pods-ios-memo-demoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B6FC78531FEEA91000B72718 /* NSDate+ToString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+ToString.h"; sourceTree = "<group>"; };
 		B6FC78541FEEA91000B72718 /* NSDate+ToString.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+ToString.m"; sourceTree = "<group>"; };
@@ -176,7 +180,7 @@
 		B637077F1FE4A83900A722A2 /* ios-memo-demoTests */ = {
 			isa = PBXGroup;
 			children = (
-				B63707801FE4A83900A722A2 /* ios_memo_demoTests.m */,
+				B6AAC5D21FEFA8E400B29989 /* Models */,
 				B63707821FE4A83900A722A2 /* Info.plist */,
 			);
 			path = "ios-memo-demoTests";
@@ -349,6 +353,32 @@
 				B63707941FE4AA5E00A722A2 /* UIViewController+Storyboard.m */,
 			);
 			path = UIKit;
+			sourceTree = "<group>";
+		};
+		B6AAC5D21FEFA8E400B29989 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B6AAC5D71FEFAD9600B29989 /* MemoList */,
+				B6AAC5D81FEFADA000B29989 /* SQLite */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B6AAC5D71FEFAD9600B29989 /* MemoList */ = {
+			isa = PBXGroup;
+			children = (
+				B6AAC5D31FEFA8F800B29989 /* MemoListCellItemTests.m */,
+				B6AAC5D51FEFAAB200B29989 /* MemoListToolbarTests.m */,
+			);
+			path = MemoList;
+			sourceTree = "<group>";
+		};
+		B6AAC5D81FEFADA000B29989 /* SQLite */ = {
+			isa = PBXGroup;
+			children = (
+				B6AAC5D91FEFADAF00B29989 /* MemoDaoTests.m */,
+			);
+			path = SQLite;
 			sourceTree = "<group>";
 		};
 		F4787EA3FFE5AD7199B9E336 /* Frameworks */ = {
@@ -600,7 +630,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B63707811FE4A83900A722A2 /* ios_memo_demoTests.m in Sources */,
+				B6AAC5D61FEFAAB200B29989 /* MemoListToolbarTests.m in Sources */,
+				B6AAC5D41FEFA8F800B29989 /* MemoListCellItemTests.m in Sources */,
+				B6AAC5DA1FEFADAF00B29989 /* MemoDaoTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,11 +9,11 @@
 #import "MemoListToolbar.h"
 
 @implementation MemoListToolbar
-+ (NSString *)rightToolbarButtonTitle:(NSInteger)count {
++ (NSString *)rightButtonTitleWithMemoCount:(NSInteger)count {
     return (count == 0) ? [@"NO_MEMOS" localized] : [NSString stringWithFormat:[@"MEMOS_COUNT" localized], count];
 }
 
-+ (NSString *)leftToolbarButtonTitle:(BOOL)isEditing {
++ (NSString *)leftButtonTitleWhenIsEditing:(BOOL)isEditing {
     return isEditing ? [@"DELETE_ALL" localized] : [@"ADD_MEMO" localized];
 }
 @end

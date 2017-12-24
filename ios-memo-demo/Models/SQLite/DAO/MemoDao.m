@@ -20,15 +20,14 @@
  */
 + (BOOL)insert:(Memo *)memoObject {
 
-    NSString *dateString = [[NSDate date] toStringWithFormat:@"yyyy/MM/dd HH:mm:ss"];
-
     NSString* sql = @"INSERT INTO MEMO(updateDate, text) VALUES(?, ?)";
 
     BOOL result = NO;
 
     [[SQLiteHelper sharedManager] dbOpen];
     result = [[SQLiteHelper sharedManager].db executeUpdate:sql
-                                       withArgumentsInArray:@[dateString, memoObject.text]];
+                                       withArgumentsInArray:@[memoObject.updateDate,
+                                                              memoObject.text]];
     [[SQLiteHelper sharedManager] dbClose];
     return result;
 }
@@ -42,11 +41,9 @@
  */
 + (BOOL)update:(Memo *)memoObject {
 
-    NSString *updateDateString = [[NSDate date] toStringWithFormat:@"yyyy/MM/dd HH:mm:ss"];
-
     NSString* sql = @"UPDATE MEMO SET updateDate = :UPDATEDATE, text = :TEXT WHERE memoId = :MEMOID";
 
-    NSDictionary<NSString *, id> *params = @{@"UPDATEDATE": updateDateString,
+    NSDictionary<NSString *, id> *params = @{@"UPDATEDATE": memoObject.updateDate,
                                              @"TEXT": memoObject.text,
                                              @"MEMOID": @(memoObject.memoId)};
 
